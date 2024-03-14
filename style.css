@@ -7,8 +7,10 @@
 }
 
 .card-border,
-.card {
+.card,
+.card-body {
   border: none;
+  background-color: none;
 }
 
 .button:hover {
@@ -25,8 +27,6 @@ footer {
   margin-bottom: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: var(--footer-color);
-  color: white;
 }
 
 a {
@@ -47,7 +47,8 @@ a {
   font-family: poppins-regular;
 }
 
-p {
+p,
+.card-text {
   font-family: roboto-regular;
 }
 
@@ -61,4 +62,19 @@ p {
 
 .margin-bottom-sm {
   margin-bottom: 50px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--footer-color);
 }
